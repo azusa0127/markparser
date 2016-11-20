@@ -1,0 +1,81 @@
+Total before late penalty: [/100]
+
+Part 1: Debugging a Simple C Program [/10]
+---------------------------------------------
+	1. P1d.txt	[/5]
+	2. P1s.txt	[/5]
+	
+	
+Part 2: Convert Java Program to C [/50]
+---------------------------------------------
+	1. struct Node		[/3]
+		* value	[/1]
+		* left	[/1]
+		* right	[/1]
+		
+	2. newNode, constructor,
+	   or allocating and
+	   initializing nodes	[/10]
+		* malloc with correct size	[/4]
+		* returned value of malloc is
+		  used as "Node *"		[/2]
+		* initializing each field of 
+		  the new Node			[/3]
+		* there is no other bug		[/1]
+		  
+	3. insertNode		[/11]
+		* using toNode as pointer for "this" correctly	[/4]
+		* using n as a pointer correctly		[/2]
+		* translating left.insertNode(n) correctly	[/2]
+		* translating right.insertNode(n) correctly	[/2]
+		* there is no other bug				[/1]
+		
+	4. insert		[/6]
+		* constructing a new Node with correct value	[/3]
+		* calling insertNode with correct arguments	[/2]
+		* there is no other bug				[/1]
+		
+	5. printInOrder		[/9]
+		* using node as pointer for "this" correctly	[/4]
+		* translating left.printInOrder() correctly	[/2]
+		* translating right.printInOrder() correctly	[/2]
+		* there is no other bug				[/1]
+		
+	6. main			[/11]
+		* creating the root correctly		[/4]
+		* inserting new nodes correctly		[/4]
+		* printInOrder				[/2]
+		* there is no other bug			[/1]
+
+Part 4: Convert C to Assembly Code [/40]
+---------------------------------------------
+	1. Assembly
+		* Code	[/21]
+			- loading value of i correctly		[/3.5]
+			- loading address of s correctly	[/1.75]
+			- loading address of v correctly	[/1.75]
+			- v = s.x [i]				[/3.5]
+			- v = s.y [i]				[/5.25]
+			- v = s.z->x [i]			[/5.25]
+			
+		* Data	[/7]
+			- correct size of s	[/4]
+			- correct value is
+			  stored in s.y		[/1.5]
+			- correct value is
+			  stored in s.z		[/1.5]
+	
+	2. Questions	[/12]
+		(a) v = s.x [i]		[/4]
+			- value	      [/1]
+			- explanation [/3]
+			
+		(a) v = s.y [i]		[/4]
+			- value	      [/1]
+			- explanation [/3]
+			
+		(a) vv = s.z->x [i]	[/4]
+			- value	      [/1]
+			- explanation [/3]
+			
+Comments:
