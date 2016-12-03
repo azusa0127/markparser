@@ -8,6 +8,7 @@ ROOTDIR = '.'
 
 TARGET_DIRS = [
   '._.DS_Store',
+  '__MACOSX',
   '_MACOSX'
   ]
 
